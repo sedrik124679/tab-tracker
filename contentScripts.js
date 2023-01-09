@@ -15,7 +15,7 @@ chrome.runtime.sendMessage(
 )
 
 let timer;
-    async function kek() {
+    async function load() {
         clearTimeout(timer);
         chrome.runtime.sendMessage(
             {message: 'Service worker is working...'}, data => console.log(data)
@@ -39,7 +39,7 @@ let timer;
                 container.innerHTML = str
             }
         }
-        timer = setTimeout(kek, 3000);
+        timer = setTimeout(load, 3000);
     }
 // )()
-window.addEventListener('load', kek, false)
+window.addEventListener('load', load, false)

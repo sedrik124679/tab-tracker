@@ -3,8 +3,6 @@ const email = document.getElementById('email')
 const domainName = document.getElementById('domainName')
 const apiKey = document.getElementById('apiKey')
 
-// https://sedrik124679.atlassian.net/rest/api/3/project
-
 if (localStorage.getItem('domainName') && !localStorage.getItem('issueKey')) {
     window.open('search.html', '_self')
 } else if (localStorage.getItem('domainName') && localStorage.getItem('issueKey')) {
